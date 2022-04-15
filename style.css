@@ -64,8 +64,10 @@ header h2 {
 .about {
     display: flex;
     justify-content: center;
+    margin: auto;
     align-items: flex-start;
     flex-wrap: wrap;
+    width: 80%;
 }
 
 #profilepic img {
@@ -92,15 +94,13 @@ font-size: 14px;
 line-height: 16px;
 }
 
-.info {
-    width: 192px;
-height: 190px;
-left: 311px;
-top: 531px;
-}
 
 #profilepic {
     margin: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 #contactdetails img {
@@ -133,39 +133,48 @@ top: 531px;
 }
 
 .leftsideabout {
-    width: 300px;
+    width: 15%;
     display: flex;
+    flex-grow: 2;
+    flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-right: 60px;
     justify-content: flex-end;
     margin-top: 30px;
 }
 
 .rightsideabout {
-    width: 300px;
+    width: 20%;
     display: flex;
+    flex-grow: 2;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-left: 60px;
     margin-top: 30px;
 }
 
-.agileexplanation {
+.skilldetail {
     visibility: hidden;
-    display: block;
-    width: 160px;
-    height: 10px;
-    background-color: #555;
-    color: #fff;
+    display: none;
+    width: 80%;
+    text-align: center;
+    height: auto;
+    background-color: #fec0caa1;
+    color: black;
     text-align: center;
     border-radius: 6px;
     padding: 8px 0;
-    z-index: 1;}
+    margin: 8px;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    -webkit-animation: fadeOut 3s;
+    animation: fadeOut 3s;}
 
  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-.agileexplanation.show {
+.skilldetail.show {
     visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
+    -webkit-animation: fadeIn 3s;
+    animation: fadeIn 3s;
+    display: block;
   }
