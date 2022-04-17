@@ -10,5 +10,8 @@ function myFunction(event) {
    }
   var popup = document.getElementById(event.target.id+"-skill");
   popup.classList.toggle("show");
-  console.log("HI all!!")
+
+  var elmntToView = document.getElementById(event.target.id+"-skill");
+  elmntToView.scrollIntoView(); 
+  console.log("HI all!!");
 }
