@@ -8,10 +8,21 @@ function myFunction(event) {
      var tableChild = children[i];
      tableChild.classList.remove("show");
    }
+
+   var parent = document.getElementById("skills-list");
+
+   var children = parent.children;
+   for (var i = 0; i < children.length; i++) {
+     var tableChild = children[i];
+     tableChild.classList.remove("selected");
+   }
+
+  var selected = event.target;
+  selected.classList.add("selected");
   var popup = document.getElementById(event.target.id+"-skill");
   popup.classList.toggle("show");
 
   var elmntToView = document.getElementById(event.target.id+"-skill");
-  elmntToView.scrollIntoView(); 
+  elmntToView.scrollIntoView({ block: 'end',  behavior: 'smooth' }); 
   console.log("HI all!!");
 }

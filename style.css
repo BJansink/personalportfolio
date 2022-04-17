@@ -1,3 +1,7 @@
+*:focus {
+    outline: 2px solid purple;
+}
+
 body {
     font-family: Helvetica;
     font-size: 20px;
@@ -73,6 +77,11 @@ header h2 {
     header h1 {
         font-size: 30px;
     }
+
+    header h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
 }
 
 .about {
@@ -88,6 +97,7 @@ header h2 {
     .about {
         flex-direction: column;
         align-items: center;
+        margin-top: 10px;
     }
 }
 
@@ -154,14 +164,34 @@ line-height: 16px;
     margin-left: 10px;
 }
 
-#skills-list h5 {
-    margin: 10px;
+#skills-list button {
+    margin: 5px;
+    padding: 10px 5px;
+    border-radius: 100px;
+    box-shadow: none;
+    border: none;
+    background: none;
+    font-size: 0.83em;
+    font-weight: bold;
 }
 
-#skills-list h5:hover {
-    margin: 10px;
-    background-color: #a67cc25e;
+@media only screen and (max-width: 900px) {
+    #skills-list button {
+        background-color: #a079b8ef;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+}
+
+#skills-list button:hover {
+    background-color: #ddcbe9;
     border-radius: 100px;
+    cursor: pointer;
+}
+
+#skills-list .selected {
+    background-color: #460c6bef;
+    color: white;
 }
 
 .leftsideabout {
